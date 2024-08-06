@@ -5,6 +5,7 @@ import Link from "next/link";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import "remixicon/fonts/remixicon.css";
+import { NAV_LINKS } from "../../constants";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -21,7 +22,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth scroll-my-56">
       <body id="home">
-        <Navbar />
+        <Navbar navLinks={NAV_LINKS} />
         <main className="relative overflow-hidden ">{children}</main>
         {/* <Footer/> */}
       </body>

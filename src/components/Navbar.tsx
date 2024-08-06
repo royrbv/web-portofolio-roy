@@ -25,7 +25,17 @@ const oswald_light = Oswald({
   weight: ["300"],
 });
 
-const Navbar = () => {
+interface NavLink {
+  href: string;
+  key: string;
+  label: string;
+}
+
+interface NavBarProps {
+  navLinks: NavLink[];
+}
+
+const Navbar: React.FC<NavBarProps> = ({ navLinks }) => {
   const [showNav, setShowNav] = useState(false);
   const handleNavbar = () => {
     setShowNav(!showNav);
@@ -39,7 +49,7 @@ const Navbar = () => {
           <div className={oswald.className}>
             <div className="flex items-end">
               <div className="bg-lime-400 mb-1 mx-1 w-2 h-2" />
-              <Link href={"/"} className="text-xl">
+              <Link href="/#home" className="text-xl transition-all">
                 ROY BELMIRO VIRGIANT
               </Link>
             </div>
@@ -49,7 +59,7 @@ const Navbar = () => {
               <ul
                 className={`flex ${menuActive} items-center right-0 left-0 transition-all lg:gap-16 gap-8 md:static fixed rounded-lg mx-4 shadow-lg md:shadow-none md:flex-row py-6 md:py-0 flex-col text-center bg-white md:bg-transparent`}
               >
-                {NAV_LINKS.map((link) => (
+                {navLinks.map((link) => (
                   <Link
                     href={link.href}
                     className="w-full ease-out duration-100 transition-all text-lg"
