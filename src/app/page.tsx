@@ -42,7 +42,7 @@ export default function Home() {
                     <span className={poppins.className}>Hallo</span>
                   </h1>
                   <h6 className="md:text-3xl mb-2 md:mb-10">
-                    <span className={poppins.className}>I'm Roy Belmiro</span>{" "}
+                    <span className={poppins.className}>I&apos;m Roy Belmiro</span>{" "}
                     Junior Developer
                   </h6>
                 </div>
