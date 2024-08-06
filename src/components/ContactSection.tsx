@@ -62,7 +62,7 @@ const ContactSection = () => {
 
               <div className="bg-white py-5 px-6 md:w-1/2 rounded-xl shadow-md">
                 <div className={poppins.className}>
-                  <p>Let's connect</p>
+                  <p>Let&apos;s connect</p>
                   <div className="flex my-4">
                     <a
                       href="https://www.instagram.com/royrbv/"
