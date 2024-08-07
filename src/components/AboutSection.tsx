@@ -19,7 +19,7 @@ const AboutSection = () => {
     <div>
       <div id="about" className="scroll-smooth text-white scroll-my-20">
         <div className="container relative mx-auto mb-3 px-5">
-          <div className=" bg-black rounded-2xl p-7 pb-16">
+          <div className=" bg-black rounded-2xl p-7 pb-16 transition ease-out duration-700">
             <Image
               className="absolute bottom-0 md:-right-5 rotate-12 -right-3 w-16 md:w-24 transition ease-out duration-500"
               src="/gitar.png"
@@ -59,7 +59,9 @@ const AboutSection = () => {
                       height={20}
                       alt="unesa-logo"
                     />
-                    <a className=" w-auto">Universitas Negeri Surabaya</a>
+                    <a className=" w-auto text-center hover:invisible">
+                      Universitas Negeri Surabaya
+                    </a>
                     <div className="absolute invisible -right-full bg-black h-full w-10/12 px-4 items-center flex border-2 border-white text-white group-hover/unesa:right-0 group-hover/unesa:visible rounded-r-xl transition-all ease-out duration-300">
                       <a className="text-center w-full">
                         S1 Teknik Informatika 2017-2022
@@ -79,7 +81,7 @@ const AboutSection = () => {
                       height={20}
                       alt="snb-logo"
                     />
-                    <a className=" w-auto">PT. Sekar Nusa Baruna</a>
+                    <a className=" w-auto text-center">PT. Sekar Nusa Baruna</a>
                     <div className="absolute invisible -right-full bg-black h-full w-10/12 px-4 items-center flex border-2 border-white text-white group-hover/snb:right-0 group-hover/snb:visible rounded-r-xl transition-all ease-out duration-300">
                       <a className="text-center w-full">
                         Accounting Staff 2022-2024
@@ -140,11 +142,11 @@ const AboutSection = () => {
                     with not just academic knowledge but also life skills and
                     lifelong friends.
                   </p>
-                  <div className="flex justify-end md:mx-10">
+                  {/* <div className="flex justify-end md:mx-10">
                     <a className="text-black py-2 bg-white px-5 rounded-full cursor-pointer hover:bg-slate-600 transition ease-out duration-300 active:bg-slate-400">
                       Get to know me!
                     </a>
-                  </div>
+                  </div> */}
                 </div>
               )}
               {subAbout == 3 && (
