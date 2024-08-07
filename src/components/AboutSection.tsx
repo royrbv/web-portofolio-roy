@@ -116,11 +116,11 @@ const AboutSection = () => {
                     I am seeking opportunities to learn about the tech industry
                     and gain real-world experience.
                   </p>
-                  <div className="flex justify-end md:mx-10">
+                  {/* <div className="flex justify-end md:mx-10">
                     <a className="text-black py-2 bg-white px-5 rounded-full cursor-pointer hover:bg-slate-600 transition ease-out duration-300 active:bg-slate-400">
                       Get to know me!
                     </a>
-                  </div>
+                  </div> */}
                 </div>
               )}
               {subAbout == 2 && (
@@ -161,11 +161,11 @@ const AboutSection = () => {
                     prepared monthly account statements for three branches. This
                     company is a distributor of Walls ice cream products.
                   </p>
-                  <div className="flex justify-end md:mx-10">
+                  {/* <div className="flex justify-end md:mx-10">
                     <a className="text-black py-2 bg-white px-5 rounded-full cursor-pointer hover:bg-slate-600 transition ease-out duration-300 active:bg-slate-400">
                       Get to know me!
                     </a>
-                  </div>
+                  </div> */}
                 </div>
               )}
               {subAbout == 4 && (

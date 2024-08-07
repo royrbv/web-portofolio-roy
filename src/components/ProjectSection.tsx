@@ -75,7 +75,7 @@ const ProjectSection = () => {
                   <li>Visualize it with Charts</li>
                   <li>Cloud, access your data everywhere</li>
                 </div>
-                <div>
+                <div className="flex gap-2">
                   Would you try it?
                   <a
                     className="underline cursor-pointer text-slate-800 hover:text-slate-500"
@@ -84,6 +84,27 @@ const ProjectSection = () => {
                   >
                     <span className={poppins.className}> Get the .apk</span>
                   </a>
+                </div>
+                <div className="bg-gray-100  rounded-xl shadow-sm">
+                  <div className="flex mt-8 mx-6">
+                    <a className=" text-white flex items-center justify-center text-center mr-2 bg-black rounded-full w-6 h-6 ">
+                      <i className=" text-sm ri-question-mark"></i>
+                    </a>
+                    <h2 className={poppins.className}>
+                      This project made me improve in :
+                    </h2>
+                  </div>
+                  <div className="mx-8 my-4">
+                    <li>
+                      Usage of Hooks like{" "}
+                      <span className="font-bold">useState</span> and{" "}
+                      <span className="font-bold">useEffect</span>
+                    </li>
+                    <li>Firestore SDK for CRUD like add and get</li>
+                    <li>React Navigation</li>
+                    <li>React Native default Components</li>
+                    <li>StyleSheet for styling</li>
+                  </div>
                 </div>
               </div>
             </div>
