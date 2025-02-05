@@ -65,7 +65,7 @@ const ContactSection = () => {
                   <p>Let&apos;s connect</p>
                   <div className="flex my-4">
                     <a
-                      href="https://www.instagram.com/royrbv/"
+                      href="https://www.instagram.com/royterpadu/"
                       target="_blank"
                       className=" text-black flex items-center justify-center text-center mx-1 bg-transparent border-2 border-black rounded-full w-10 h-10 cursor-pointer hover:bg-black hover:text-white transition ease-out duration-300 active:bg-slate-400"
                     >

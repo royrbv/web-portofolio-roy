@@ -17,10 +17,10 @@ export default function Home() {
   return (
     <main>
       <div className="mt-20 scroll-smooth">
-        <div className="container static px-5 pb-3 pt-8 flex md:gap-3 transition-all">
-          <div className="box group md:w-3/4 w-full bg-stone-200 px-7 md:pt-20 pt-14 pb-10 md:py-12 rounded-2xl md:text-end transition ease-out duration-500 ">
+        <div className="container static px-5 pb-3 pt-8 flex lg:gap-3 transition-all">
+          <div className="box group relative xl:w-3/4 w-full bg-stone-200 px-7 lg:pt-20 pt-14 pb-10 lg:py-12 rounded-2xl lg:text-end transition ease-out duration-500 ">
             <Image
-              className="absolute w-12 h-9 md:w-32 md:h-24 top-24 left-10 lg:left-40 group-hover:scale-110 transition ease-out duration-500"
+              className="absolute w-16 h-12 lg:w-32 lg:h-24 md:w-28 md:h-20 -top-7 left-10 lg:left-40 group-hover:scale-110 transition ease-out duration-500"
               src="/petik.png"
               alt="petik"
               height={100}
@@ -28,9 +28,9 @@ export default function Home() {
             />
             <div>
               <div className="flex items-center">
-                <div className="relative md:hidden overflow-hidden w-[100px] h-[100px] mr-3 mb-3 rounded-full">
+                <div className="relative lg:hidden overflow-hidden h-[100px] max-w-[100px] min-w-[100px] mr-3 mb-3 rounded-full">
                   <Image
-                    className="absolute scale-100"
+                    className="w-full"
                     src={"/roy-square.jpeg"}
                     layout="fill"
                     objectFit="cover"
@@ -38,11 +38,13 @@ export default function Home() {
                   />
                 </div>
                 <div className="w-2/3 md:w-full">
-                  <h1 className="text-5xl md:text-9xl justify-end">
+                  <h1 className="text-5xl md:text-7xl lg:text-9xl justify-end">
                     <span className={poppins.className}>Hallo</span>
                   </h1>
                   <h6 className="md:text-3xl mb-2 md:mb-10">
-                    <span className={poppins.className}>I&apos;m Roy Belmiro</span>{" "}
+                    <span className={poppins.className}>
+                      I&apos;m Roy Belmiro
+                    </span>{" "}
                     Junior Developer
                   </h6>
                 </div>
@@ -64,7 +66,7 @@ export default function Home() {
                 <i className=" text-xl ri-linkedin-fill"></i>
               </a>
               <a
-                href="https://www.instagram.com/royrbv/"
+                href="https://www.instagram.com/royterpadu/"
                 target="_blank"
                 className=" text-black items-center p-2 text-center mx-1 bg-transparent border-2 border-black rounded-full w-12 h-12 cursor-pointer hover:bg-black hover:text-white transition ease-out duration-300 active:bg-slate-400"
               >
@@ -78,7 +80,7 @@ export default function Home() {
               </a>
             </div>
           </div>
-          <div className="box md:w-1/4 relative invisible md:visible bg-blue-400 rounded-2xl overflow-hidden ">
+          <div className="box lg:w-1/4 relative invisible lg:visible bg-blue-400 rounded-2xl overflow-hidden ">
             <Image
               className="scale-100 hover:scale-105 transition ease-out duration-500"
               layout="fill"
