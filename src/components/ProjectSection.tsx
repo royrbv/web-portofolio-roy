@@ -12,7 +12,7 @@ const ProjectSection = () => {
     <div>
       <div id="project" className="scroll-smooth scroll-my-20">
         <div className="container mx-auto mb-3 px-5">
-          <div className=" bg-yellow-100 rounded-2xl shadow p-7">
+          <div className=" bg-yellow-200 rounded-2xl shadow p-7">
             <div className={poppins.className}>
               <h1 className="text-3xl">My Projects</h1>
             </div>

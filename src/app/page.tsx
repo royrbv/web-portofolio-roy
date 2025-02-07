@@ -18,17 +18,17 @@ export default function Home() {
     <main>
       <div className="mt-20 scroll-smooth">
         <div className="container static px-5 pb-3 pt-8 flex lg:gap-3 transition-all">
-          <div className="box group relative xl:w-3/4 w-full bg-stone-200 px-7 lg:pt-20 pt-14 pb-10 lg:py-12 rounded-2xl lg:text-end transition ease-out duration-500 ">
-            <Image
+          <div className="box group relative xl:w-3/4 border-4 w-full px-16 lg:pt-20 pt-14 pb-10 lg:py-12 rounded-2xl lg:text-end transition ease-out duration-500 ">
+            {/* <Image
               className="absolute w-16 h-12 lg:w-32 lg:h-24 md:w-28 md:h-20 -top-7 left-10 lg:left-40 group-hover:scale-110 transition ease-out duration-500"
               src="/petik.png"
               alt="petik"
               height={100}
               width={100}
-            />
+            /> */}
             <div>
               <div className="flex items-center">
-                <div className="relative lg:hidden overflow-hidden h-[100px] max-w-[100px] min-w-[100px] mr-3 mb-3 rounded-full">
+                <div className="relative lg:hidden overflow-hidden h-[100px] max-w-[100px] min-w-[100px] mr-3 mb-2 rounded-full">
                   <Image
                     className="w-full"
                     src={"/roy-square.jpeg"}
@@ -38,27 +38,21 @@ export default function Home() {
                   />
                 </div>
                 <div className="w-2/3 md:w-full">
-                  <h1 className="text-5xl md:text-7xl lg:text-9xl justify-end">
-                    <span className={poppins.className}>Hallo</span>
-                  </h1>
-                  <h6 className="md:text-3xl mb-2 md:mb-10">
+                  <h6 className="md:text-3xl lg:text-8xl mt-3 mb-4">
                     <span className={poppins.className}>
-                      I&apos;m Roy Belmiro
-                    </span>{" "}
-                    Junior Developer
+                      Roy
+                      <br />
+                      Belmiro
+                    </span>
                   </h6>
                 </div>
               </div>
             </div>
             <div className="flex justify-end">
-              <p className="mb-16 mt-3 md:mb-28 text-sm md:text-lg ">
-                I switched my career from{" "}
-                <span className={poppins.className}>accounting</span> back to{" "}
-                <span className={poppins.className}>tech</span>, specifically
-                web and mobile development.
-                <br />
-                Currently, I am learning about React Native.
-                <br />I also have an enthusiasm for UI Design topics.
+              <p className="mb-16 md:mb-10 lg:text-xl md:text-lg text-stone-500 ">
+                Dari akuntansi ke teknologi <br />
+                kini saya fokus kembali pada pengembangan web dan mobile <br />
+                khususnya dengan React Native
               </p>
             </div>
             <div className="flex justify-end ">
@@ -92,8 +86,8 @@ export default function Home() {
         </div>
       </div>
       {/* --------------------------------------------------------- */}
-      <AboutSection />
       <ProjectSection />
+      <AboutSection />
       <ContactSection />
     </main>
   );

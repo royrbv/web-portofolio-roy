@@ -11,7 +11,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Roy Bel - Junior Developer",
-  description: "Roy Bel's Web and Mobile App Portfolio",
+  description: "Roy Bel's Portfolio",
 };
 
 export default function RootLayout({
@@ -21,7 +21,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="scroll-smooth scroll-my-56">
-      <body id="home">
+      {/* <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+        rel="stylesheet"
+      /> */}
+
+      <body
+        id="home"
+        style={{ fontFamily: "Poppins, sans-serif", fontWeight: 300 }}
+      >
         <Navbar navLinks={NAV_LINKS} />
         <main className="relative overflow-hidden ">{children}</main>
         {/* <Footer/> */}
